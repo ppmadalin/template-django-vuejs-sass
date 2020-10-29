@@ -99,11 +99,31 @@ module.exports = {
     loaderOptions: {
       sass: {
         prependData: `
-            @import "@/scss/_variables.scss";
-            @import "@/scss/_mixins.scss";
+            @import "@/sass/_variables.scss";
+            @import "@/sass/_mixins.scss";
           `,
       },
     },
   },
 };
+```
+
+### Step 6 - Add django/vue.js integration for dev and production
+
+- 6.1 - Go to `vue.config.js`
+- 6.2 - Add the following
+
+```js
+  devServer: {
+      proxy: {
+        '^/api/': {
+          target: 'http://127.0.0.1:8000',
+          ws: false,
+        }
+      }
+    },
+    // outputDir must be added to Django's TEMPLATE_DIRS
+    outputDir: './dist/',
+    // assetsDir must match Django's STATIC_URL
+    assetsDir: 'static',
 ```
