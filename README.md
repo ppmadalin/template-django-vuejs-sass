@@ -12,6 +12,19 @@ This is a project template using Django and Vue.js with Sass. Below are describe
   - `pipenv install djangorestframework`
 - 1.5 - Start django project: `pipenv run django-admin startproject website`
 - 1.6 - Rename the top `website` folder to `src`
+- 1.7 - Install the django rest framework app
+
+```python
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "rest_ramework",
+]
+```
 
 **Step 2: - Create first app**
 
@@ -37,3 +50,16 @@ class BlogConfig(AppConfig):
 ```
 
 - 2.7 - Add app to installed apps
+
+```python
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "rest_ramework",
+    "apps.blog.apps.BlogConfig",
+]
+```
