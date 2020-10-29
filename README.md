@@ -7,3 +7,6 @@ This is a project template using Django and Vue.js with Sass. Below are describe
 - 1.1 - Create a new directory `mkdir project`
 - 1.2 - CD to that directory `cd project`
 - 1.3 - Create a new virtual environment using pipenv `pipenv install`
+- 1.4 - Install django and django rest framework
+  - `pipenv install django`
+  - `pipenv install djangorestframework`
