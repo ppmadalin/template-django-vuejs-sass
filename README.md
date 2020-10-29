@@ -12,3 +12,18 @@ This is a project template using Django and Vue.js with Sass. Below are describe
   - `pipenv install djangorestframework`
 - 1.5 - Start django project `pipenv run django-admin startproject website`
 - 1.6 - Rename the top `website` folder to `src`
+
+**Step 2: - Create first app**
+
+- 2.1 - CD to `src` directory `cd src`
+- 2.2 - Create a directory called `apps`
+- 2.3 - Create a `__init__.py` file in `apps` folder `touch __init__.py`
+- 2.4 - Change directory to `apps`
+- 2.5 - Create a django app `pipenv run python ../manage.py startapp blog`
+- 2.6 - Update the app config
+
+  - ```
+    class BlogConfig(AppConfig):
+      name = 'apps.blog'
+
+    ```
