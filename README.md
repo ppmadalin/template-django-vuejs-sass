@@ -68,19 +68,6 @@ INSTALLED_APPS = [
 
 - 3.1 - Change directory to `src`: `cd src`
 - 3.2 - Create the vue.js app using Vue CLI: `vue create frontend -n`
-- 3.3 - Manually select features
-  ![3.3](images/3.3.png)
-- 3.4
-  ![3.4](images/3.4.png)
-- 3.5
-  ![3.5](images/3.5.png)
-- 3.6
-  ![3.6](images/3.6.png)
-- 3.7
-  ![3.7](images/3.7.png)
-- 3.8
-  ![3.8](images/3.8.png)
-- 3.9
 
 ### Step 4 - Create sass folder
 
