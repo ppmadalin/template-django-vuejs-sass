@@ -69,4 +69,4 @@ INSTALLED_APPS = [
 - 3.1 - Change directory to `src`: `cd src`
 - 3.2 - Create the vue.js app using Vue CLI: `vue create frontend -n`
 - 3.3 - Manually select features
-  ![3.3](images/3.3)
+  ![3.3](images/3.3.png)
