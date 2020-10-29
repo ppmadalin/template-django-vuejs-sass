@@ -24,14 +24,14 @@ This is a project template using Django and Vue.js with Sass. Below are describe
 
 From
 
-```
+```python
 class BlogConfig(AppConfig):
     name = 'blog'
 ```
 
 To
 
-```
+```python
 class BlogConfig(AppConfig):
     name = 'apps.blog'
 ```
