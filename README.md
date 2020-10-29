@@ -10,3 +10,5 @@ This is a project template using Django and Vue.js with Sass. Below are describe
 - 1.4 - Install django and django rest framework
   - `pipenv install django`
   - `pipenv install djangorestframework`
+- 1.5 - Start django project `pipenv run django-admin startproject website`
+- 1.6 - Rename the top `website` folder to `src`
