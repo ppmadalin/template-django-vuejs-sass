@@ -2,7 +2,7 @@
 
 This is a project template using Django and Vue.js with Sass. Below are described the steps I did in order to create this template.
 
-**Step 1: - Create new django project**
+### Step 1: - Create new django project
 
 - 1.1 - Create a new directory: `mkdir project`
 - 1.2 - CD to that directory: `cd project`
@@ -26,7 +26,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-**Step 2: - Create first app**
+### Step 2: - Create first app
 
 - 2.1 - CD to `src` directory: `cd src`
 - 2.2 - Create a directory called: `apps`
