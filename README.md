@@ -165,3 +165,20 @@ TEMPLATES[0]['DIRS'] += [
     os.path.join(FRONTEND_DIR, 'dist'),
 ]
 ```
+
+### Step 8 - Add template view
+
+- 8.1 - Go to `src/website/urls.py`
+- 8.2 - Add the follwing
+
+```python
+from django.contrib import admin
+from django.urls import path
+from django.views.generic import TemplateView
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", TemplateView.as_view(template_name="index.html"), name="index.html"),
+]
+
+```
