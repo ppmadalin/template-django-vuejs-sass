@@ -80,3 +80,30 @@ INSTALLED_APPS = [
   ![3.7](images/3.7.png)
 - 3.8
   ![3.8](images/3.8.png)
+- 3.9
+
+### Step 4 - Create sass folder
+
+- 4.1 - Change directory to `frontend/src`
+- 4.2 - Create folder `sass`
+- 4.3 - Create the following files: `_base.scss, _layouts.scss, _mixins.scss, _variables.scss`
+
+### Step 5 - Create vue config file and add loader options
+
+- 5.1 - Create file `vue.config.js`
+- 5.2 - Add the following options for sass loader
+
+```js
+module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `
+            @import "@/scss/_variables.scss";
+            @import "@/scss/_mixins.scss";
+          `,
+      },
+    },
+  },
+};
+```
