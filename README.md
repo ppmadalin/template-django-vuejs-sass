@@ -114,16 +114,37 @@ module.exports = {
 - 6.2 - Add the following
 
 ```js
-  devServer: {
-      proxy: {
-        '^/api/': {
-          target: 'http://127.0.0.1:8000',
-          ws: false,
-        }
-      }
+module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `
+            @import "@/sass/_variables.scss";
+            @import "@/sass/_mixins.scss";
+          `,
+      },
     },
-    // outputDir must be added to Django's TEMPLATE_DIRS
-    outputDir: './dist/',
-    // assetsDir must match Django's STATIC_URL
-    assetsDir: 'static',
+  },
+  devServer: {
+    proxy: {
+      "^/api/": {
+        target: "http://127.0.0.1:8000",
+        ws: false,
+      },
+    },
+  },
+  // outputDir must be added to Django's TEMPLATE_DIRS
+  outputDir: "./dist/",
+  // assetsDir must match Django's STATIC_URL
+  assetsDir: "static",
+};
+```
+
+### Step 7 - Update django settings file
+
+- 7.1 - Go to `src/website/settings.py`
+- 7.2 - At the end of the file the following:
+
+```python
+
 ```
